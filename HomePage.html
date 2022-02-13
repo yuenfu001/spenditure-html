@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/516bf44db1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Spenditure Home</title>
+  </head>
+  <body>
+    <section class="container-fluid">
+      <div class="home row">
+        <div class="left-sidebar col-sm-2 container">
+          <div class="ms-2" id="dots" style="display: flex; padding: 20px">
+            <div
+              style="
+                border-radius: 50%;
+                background-color: #3ec3d5;
+                width: 16px;
+                height: 16px;
+                margin: 0px;
+              "
+            ></div>
+            <div
+              style="
+                border-radius: 50%;
+                background-color: #ff5460;
+                width: 16px;
+                height: 16px;
+                margin: 0px 10px;
+              "
+            ></div>
+            <div
+              style="
+                border-radius: 50%;
+                background-color: #41dc65;
+                width: 16px;
+                height: 16px;
+                margin: 0px;
+              "
+            ></div>
+          </div>
+
+          <div id="logo" class="mb-3 me-3">
+            <a href="./HomePage.html"
+              ><img src="./Images/home-logo.svg" alt=""
+            /></a>
+          </div>
+
+          <div id="nav" class="ms-4">
+            <a
+              class="menu-list"
+              style="padding: 5px; display: flex"
+              href="./HomePage.html"
+              ><svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.9487 9.04847L9.77668 0.404627C9.71784 0.342222 9.64795 0.292712 9.57102 0.258932C9.49408 0.225151 9.4116 0.207764 9.32831 0.207764C9.24501 0.207764 9.16254 0.225151 9.0856 0.258932C9.00866 0.292712 8.93877 0.342222 8.87993 0.404627L0.707948 9.04847C0.469871 9.30047 0.334961 9.64278 0.334961 9.99979C0.334961 10.7411 0.904361 11.3438 1.6047 11.3438H2.46575V17.5117C2.46575 17.8834 2.74946 18.1837 3.10062 18.1837H8.05856V13.4796H10.2806V18.1837H15.556C15.9072 18.1837 16.1909 17.8834 16.1909 17.5117V11.3438H17.0519C17.3892 11.3438 17.7126 11.2031 17.9506 10.949C18.4447 10.424 18.4447 9.57348 17.9487 9.04847Z"
+                /></svg
+              ><span style="margin-left: 10px">Home</span></a
+            >
+
+            <a class="menu-list" style="padding: 5px; display: flex" href=""
+              ><img src="./Images/tracker-icon.svg" alt="" /><span
+                style="margin-left: 10px"
+                >Tracker</span
+              >
+            </a>
+            <a class="menu-list" style="padding: 5px; display: flex" href=""
+              ><img src="./Images/budget-icon.svg" alt="" /><span
+                style="margin-left: 10px"
+                >Budget</span
+              >
+            </a>
+            <a
+              class="menu-list"
+              style="padding: 5px; display: flex"
+              href="./Account.html"
+              ><img src="./Images/user-icon.svg" alt="" /><span
+                style="margin-left: 10px"
+                >Account</span
+              >
+            </a>
+          </div>
+
+          <div
+            id="border"
+            style="
+              border: 1px solid white;
+              width: 80%;
+              margin: 20px;
+              margin-right: -35px;
+            "
+          ></div>
+
+          <div class="">
+            <a style="padding: 5px; margin: 20px; display: flex" href=""
+              ><img src="./Images/question-icon.svg" alt="" /><span
+                style="margin-left: 10px"
+                >Get Help</span
+              ></a
+            >
+            <a style="padding: 5px; margin: 20px; display: flex" href=""
+              ><img src="./Images/settings-icon.svg" alt="" /><span
+                style="margin-left: 10px"
+                >Settings</span
+              ></a
+            >
+
+            <div
+              style="
+                padding: 5px;
+                margin: 20px;
+                margin-top: 230px;
+                margin-left: 60px;
+              "
+            >
+              <a style="display: flex" href="./webLogin.html"
+                ><span>Logout</span
+                ><img
+                  style="margin-left: 10px"
+                  src="./Images/logout-icon.svg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div id="main" class="container main col-sm-8 pb-4">
+          <div class="">
+            <div class="card home-card pt-2 px-2 pe-2 mt-4 mb-5">
+              <div class="card-title d-flex justify-content-between px-1 pb-1">
+                <div>
+                  <h3 style="text-align: left; color: white">Home</h3>
+                  <h5 style="text-align: left; color: #fcfcfd80">
+                    Hello, Maria
+                  </h5>
+                </div>
+                <div style="display: flex">
+                  <img
+                    style="width: 100px; margin-left: 240px"
+                    src="./Images/custmer-img.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="card-text">
+                <div class="row align-items-end p-3">
+                  <div
+                    class="card col"
+                    style="border-radius: 20px !important; max-width: 140px"
+                  >
+                    <div style="padding: 10px 10px">
+                      <img
+                        style="color: #41dc65"
+                        src="./Images/web-backarrow.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p style="margin-left: 10px; color: #1d2025">Income</p>
+                    <h5
+                      style="
+                        padding: 0px 10px 10px;
+                        margin-top: -15px;
+                        color: #41dc65;
+                      "
+                    >
+                      $6,593.75
+                    </h5>
+                  </div>
+
+                  <div
+                    class="card col mx-3"
+                    style="border-radius: 20px !important; max-width: 140px"
+                  >
+                    <div style="padding: 10px 10px">
+                      <img src="./Images/webforwardarrow.svg" alt="" />
+                    </div>
+                    <p style="margin-left: 10px; color: #1d2025">Expense</p>
+                    <h5
+                      style="
+                        padding: 0px 10px 10px;
+                        margin-top: -15px;
+                        color: #ff5460;
+                      "
+                    >
+                      $2,645.50
+                    </h5>
+                  </div>
+
+                  <div
+                    class="col card"
+                    style="background-color: #3ec3d5; border-radius: 20px"
+                  >
+                    <div class="">
+                      <h6 style="color: white">
+                        My Balance
+                        <span class="" style="margin-left: 300px">
+                          <img src="./Images/calender.svg" alt="" />
+                        </span>
+                      </h6>
+
+                      <h4 style="color: white">$25,520</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col card border-0">
+                <div class="card-body">
+                  <h4 class="card-title">View recent activities</h4>
+
+                  <h5 class="card-subtitle mt-4">
+                    RECENT ACTIVITIES<a href="#"
+                      ><img
+                        style="margin-left: 110px"
+                        src="./Images/dots-icon.svg"
+                        alt=""
+                    /></a>
+                  </h5>
+
+                  <div class="card-text">
+                    <table style="width: 100%">
+                      <tr>
+                        <td>
+                          <img src="./Images/medicine-icon.svg" alt="" />
+                        </td>
+                        <td>
+                          Gaurthier Grewitt <br />
+                          Friday, 11:08 PM
+                        </td>
+                        <td style="font-weight: bold; color: green">$340.00</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="./Images/medicine-icon.svg" alt="" />
+                        </td>
+                        <td>
+                          Sukhbirpal Dhalan <br />
+                          Thursday, 01:00 AM
+                        </td>
+                        <td style="font-weight: bold; color: green">$328.22</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="./Images/medicine-icon.svg" alt="" />
+                        </td>
+                        <td>
+                          Lia Castro <br />
+                          Tuesday, 07:12 AM
+                        </td>
+                        <td style="font-weight: bold; color: red">$2561.34</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="./Images/medicine-icon.svg" alt="" />
+                        </td>
+                        <td>Xu Xuefeng <br />Tuesday, 10:34 PM</td>
+                        <td style="font-weight: bold; color: green">$931.12</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="./Images/medicine-icon.svg" alt="" />
+                        </td>
+                        <td>Lia Castro <br />Sunday, 05:40 PM</td>
+                        <td style="font-weight: bold; color: green">$128.43</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col card border-0">
+                <div class="card-body">
+                  <h4 class="card-title">Download the mobile App</h4>
+                  <div>
+                    <a href=""
+                      ><img src="./Images/download-apple.svg" alt=""
+                    /></a>
+                    <a href=""
+                      ><img src="./Images/download-google.svg" alt=""
+                    /></a>
+                  </div>
+
+                  <h5 class="card-subtitle mt-4">
+                    Total Categories<a href="#"
+                      ><span style="margin-left: 110px"
+                        ><a href="#">See all</a></span
+                      ></a
+                    >
+                  </h5>
+
+                  <div class="card-text">
+                    <table style="width: 100%">
+                      <tr>
+                        <td>
+                          <img src="./Images/grocery.svg" alt="" />
+                        </td>
+                        <td>
+                          Grocery <br />
+                          15 Aug, 2020
+                        </td>
+                        <td style="font-weight: bold">$243.00</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="./Images/Ipadpro.svg" alt="" />
+                        </td>
+                        <td>
+                          ipad Pro 2020 <br />
+                          10 Aug, 2020
+                        </td>
+                        <td style="font-weight: bold">-$799.00</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            style="width: 30px; height: 30px"
+                            src="./Images/Uber.svg"
+                            alt=""
+                          />
+                        </td>
+                        <td>
+                          Uber <br />
+                          5 Mar 2020
+                        </td>
+                        <td style="font-weight: bold">+$50.00</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-sidebar col-sm-2 container-fluid">
+          <div class="right-items">
+            <div>
+                <div class="ms-2">
+                  <button
+                    class="border-0"
+                    type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                  >
+                    <span class=""><img src="./Images/Search-icon.svg" alt="" /></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+                  >
+                    <div class="offcanvas-header">
+                      <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <form class="d-flex">
+                        <input
+                          class="form-control me-2"
+                          type="search"
+                          placeholder="Search"
+                          aria-label="Search"
+                        />
+                        <button class="btn btn-outline-success" type="submit">
+                          Search
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              
+            </div>
+            <div style="margin: 40px 10px" class="position-relative">
+              <span
+                style="right: 30px"
+                class="position-absolute top-5 translate-middle badge rounded-pill bg-danger"
+              >
+                3
+              </span>
+              <a href=""><img src="./Images/bell.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="ms-1">
+            <a href=""
+              ><img
+                style="width: 35.59px; height: 30.59px"
+                src="./Images/web-add.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
