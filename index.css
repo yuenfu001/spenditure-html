@@ -272,9 +272,10 @@ input:checked + .slider:before {
     /* margin-left: 70px; */
   }
 
-  .btn-google:before {
+  /* mobile view */
+  /* .btn-google:before {
     content: url(./Images/icons8-google.svg);
-  }
+  } */
 
   .success-msg {
     margin-top: 0px;
